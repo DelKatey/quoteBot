@@ -65,7 +65,7 @@ function embedQuote(client, original, msg){
         timestamp: new Date(msg.createdTimestamp).toISOString(),
         footer: {
             icon_url: msg.author.avatarURL,
-            text: '©' + msg.author.username
+            text: '©' + msg.author.username + " in #" + msg.channel.name
         }
     };
     
